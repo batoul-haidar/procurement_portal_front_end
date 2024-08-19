@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>New Request</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="../../javaScript/Global/profile_menu.js"></script>
+        <script src="../../javaScript/Global/log_out.js"></script>
+        <script src="../../javaScript/Purchaser/make_request.js" defer></script>
+        <script src="../../javaScript/Global/notifications.js"></script>
+    </head>
+    <body>
+        <div class="header_container">
+            <div class="left_side">
+                <button id="home_btn" onclick="window.location.href='purchaser_homepage.html';"><i class="fas fa-home"></i></button>
+            </div>
+            <div class="right_side">
+                <button id="notification_btn"><i class="fas fa-bell"><span id="notification_count" class="notification-count">0</span></i></button>
+                <button id="user_profile_btn"><i class="fas fa-user"></i></button> 
+            </div>           
+        </div> 
+        
+        
+        <div class="name_container">
+            <h1>PROCUREMENT PORTAL</h1>
+        </div>
+        
+        <div class="container">
+            <h2>New Request</h2>
+        <!--    <form onsubmit="submitRequest(event)"> -->
+
+        <label for="category" class="text_view" ></label>
+        <select id="category" onchange="updateProductType()" class="dropDpwn">
+            <option>Select Category</option>
+        </select>
+                    
+                    <label for="productType" class="text_view"></label>
+                    <select id="productType" onchange="updateProduct()" class="dropDpwn">
+                        <option>Select Type</option>
+                    </select>
+                    
+                    <label for="product" class="text_view" ></label>
+                    <select id="product" onchange="showFeatures()" class="dropDpwn">
+                        <option>Select Product</option>
+                    </select> 
+
+  
+                    <div id="featuresContainer" class="hidden" style="margin-top: 20px; ">
+                    <!-- Features will be dynamically injected here -->
+                </div>
+                
+
+                    <label class="text_view">Other Requirements</label>
+                    <input type="text" id="details" class="text_box"  style="width: 100%; height: 300px;" placeholder="Specify other details, if any">
+
+                
+
+                    <label class="text_view">Quantity</label>
+                    <input type="number" id="quantity" class="text_box" style="text-align: center">
+
+                
+                
+                    <span id="result_message"></span>
+                    <button type="submit" class="button" onclick="submitRequest()">Submit Request</button>
+          <!--  </form> -->
+        </div>
+        
+        
+        
+         <div id="successMessage" class="hidden_msg">Request submitted successfully!</div>
+
+    </body>
+</html>

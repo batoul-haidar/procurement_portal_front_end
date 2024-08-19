@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>Technician Home Page</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <link rel="Stylesheet" href="../../css/style.css">
+        <script src="../../javaScript/Global/profile_menu.js"></script>
+        <script src="../../javaScript/Global/log_out.js"></script>
+        <script src="../../javaScript/Global/notifications.js"></script>
+        
+        
+    </head>
+    <body>
+        <div class="header_container">
+            <div class="left_side">
+                <button id="home_btn" onclick="window.location.href='technician_homepage.html';"><i class="fas fa-home"></i></button>
+            </div>
+            <div class="right_side">
+                <button id="notification_btn"><i class="fas fa-bell"><span id="notification_count" class="notification-count">0</span></i></button>
+                <button id="user_profile_btn"><i class="fas fa-user"></i></button> 
+            </div>           
+        </div> 
+        
+        
+        <div class="name_container">
+            <h1>PROCUREMENT PORTAL</h1>
+        </div>
+        
+        <button id="new_requests" class="button" onclick="window.location.href='list_new_requests.html';">List New Requests</button>
+        <button id="my_requests" class="button" onclick="window.location.href='my_requests.html';">My Tasks</button>
+        <button id="history" class="button" onclick="window.location.href='history.html';">History</button>
+        <button id="user_guide" class="button">User Guide</button>
+    </body>
+</html>

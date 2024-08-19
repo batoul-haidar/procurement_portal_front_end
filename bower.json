@@ -1,0 +1,13 @@
+{
+    "name": "procurement_portal_front_end",
+    "version": "1.0.0",
+    "main": "path/to/main.css",
+    "ignore": [
+        ".jshintrc",
+        "**/*.txt"
+    ],
+    "dependencies": {
+    },
+    "devDependencies": {
+    }
+}

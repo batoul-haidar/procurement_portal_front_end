@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!--
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/html.html to edit this template
+-->
+<html>
+    <head>
+        <title>View Proposal</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="Stylesheet" href="../../css/style.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <script src="../../javaScript/Global/profile_menu.js"></script>
+        <script src="../../javaScript/Global/log_out.js"></script>
+        <script src="../../javaScript/Purchaser/view_proposal.js"></script>
+        <script src="../../javaScript/Global/notifications.js"></script>
+    </head>
+    <body>
+        <div class="header_container">
+            <div class="left_side">
+                <button id="home_btn" onclick="window.location.href='purchaser_homepage.html';"><i class="fas fa-home"></i></button>
+            </div>
+            <div class="right_side">
+                <button id="notification_btn"><i class="fas fa-bell"></i><span id="notification_count" class="notification-count">0</span></button>
+                <button id="user_profile_btn"><i class="fas fa-user"></i></button> 
+            </div>           
+        </div> 
+        
+        
+        <div class="name_container">
+            <h1>PROCUREMENT PORTAL</h1>
+        </div>
+        <p style="font-size: 32px; font-weight: bold;">Proposal Details</p>
+        <div id="table-container"></div>
+        
+        
+        <input type="text" id="reason" class="text_box"  style="width: 50%; margin: 20px;" placeholder="Define reason of rejection, if you want to reject">
+
+
+        <span id="result_message"></span>
+        <button id="approve" class="button" onclick="approveProposal()">Approve the proposal</button>
+        <button id="reject" class="button" onclick="rejectProposal()">Reject the proposal</button>
+        
+    </body>
+</html>
